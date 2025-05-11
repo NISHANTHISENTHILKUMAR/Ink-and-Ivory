@@ -1,3 +1,3 @@
 # Ink-and-Ivory
 An Drawing equipment selling page
-https://inkandivory.netlify.app/
+Where you can view my work : https://inkandivory.netlify.app/
