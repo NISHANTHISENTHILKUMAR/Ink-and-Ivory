@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ink & Ivory</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS for the 'Add to Cart' feature -->
+    <style>
+        .added {
+            background-color: #28a745 !important;
+            color: white !important;
+            pointer-events: none;
+        }
+        .added::before {
+            content: "✓ ";
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Ink & Ivory</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#product">Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Home -->
+<section id="home">
+  <h1 class="text-center" style="font-family: 'Lobster', cursive;">Ink & Ivory</h1>
+  <p>Expose your creativity with our high-quality drawing tools</p>
+  <div class="input-group m-4">
+    <input type="text" class="form-control" placeholder="Email Address" id="emailInput">
+    <button class="btn signin" onclick="validateEmail()">Get Started</button>
+  </div>
+  <p id="emailError" style="color: red; text-align: center;"></p>
+</section>
+
+<!-- About -->
+<section id="about">
+  <div class="container-fluid text-center">
+    <div class="row">
+      <div class="col-12">
+        <img src="logo.jpeg" class="img-fluid img-container mb-4" alt="Logo">
+      </div>
+      <div class="col-12 px-lg-5 px-3">
+        <h1>ABOUT US</h1>
+        <p>
+          At Ink & Ivory, we are dedicated to providing artists and creators with the finest drawing tools that inspire creativity and precision. Whether you're a professional artist, a hobbyist, or a student, we offer a wide selection of high-quality pencils, pens, sketchbooks, and accessories designed to help you bring your vision to life.
+          <br><br>
+          We believe in the power of the right tools to elevate your craft. That's why we offer only the best in craftsmanship and innovation, ensuring that each piece in our collection helps you draw, sketch, and create with ease and confidence.
+          <br><br>
+          With Ink & Ivory, you're not just purchasing drawing equipment; you're investing in a partnership that supports your artistic growth. Whether you're sketching your first line or refining your masterpiece, we are here to help you every step of the way.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Product -->
+<section id="product">
+  <div class="container m-5">
+    <h1 class="text-center my-5">OUR PRODUCTS</h1>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+          <img src="BeginnerDrawingKits.jpg" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">Drawing Kits</h5>
+            <a href="#" class="btn signin">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+          <img src="colourPencil.jpg" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">Colour Pencil</h5>
+            <a href="#" class="btn signin">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+          <img src="Crayons.jpeg" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">Crayons</h5>
+            <a href="#" class="btn signin">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more rows as needed -->
+    <!-- Drawing Boards, Fine-liner Pens, Graphite Pencil -->
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+          <img src="DrawingBoards.webp" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">Drawing Boards</h5>
+            <a href="#" class="btn signin">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+          <img src="Fine-linerPens.jpg" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">Fine-liner Pens</h5>
+            <a href="#" class="btn signin">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+          <img src="GraphitePencil.webp" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">Graphite Pencil</h5>
+            <a href="#" class="btn signin">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Highlighters, Paper Stumps, Pencil Cases -->
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+          <img src="Highlighters.webp" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">Highlighters</h5>
+            <a href="#" class="btn signin">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+          <img src="PaperStumps.jpg" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">Paper Stumps</h5>
+            <a href="#" class="btn signin">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+          <img src="PencilCases.webp" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">Pencil Cases</h5>
+            <a href="#" class="btn signin">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pencil Shavings Erasers, Sketch Books, Soft Brushes -->
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+          <img src="PencilShavingsErasers.jpg" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">Pencil Shavings Erasers</h5>
+            <a href="#" class="btn signin">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+          <img src="Sketchbooks.jpg" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">Sketch Books</h5>
+            <a href="#" class="btn signin">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+          <img src="SoftBrushes.jpg" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">Soft Brushes</h5>
+            <a href="#" class="btn signin">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="container box">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-12">
+        <img src="cont.jpg" class="img-fluid extended-logo">
+      </div>
+      <div class="col-lg-6 col-md-6 col-12">
+        <h1>CONTACT US</h1>
+        <form action="sendmail.php" method="POST">
+          <input type="text" class="form-control" placeholder="Enter Your Name" required>
+          <input type="email" class="form-control" placeholder="Enter Your Email" required>
+          <textarea class="form-control" placeholder="Enter Your comments" required></textarea>
+          <button class="btn signin">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center mt-4 mb-2"> © Nishanthi 2025</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function validateEmail() {
+    var email = document.getElementById("emailInput").value.trim();
+    var errorMsg = document.getElementById("emailError");
+
+    if (email === "") {
+      errorMsg.textContent = "Please enter your email address.";
+    } else {
+      errorMsg.textContent = "";
+      // Remove the redirect to prevent scrolling back to #about
+    }
+  }
+
+  // Add to Cart Functionality
+  document.addEventListener("DOMContentLoaded", function () {
+    const cartButtons = document.querySelectorAll(".btn.signin");
+    cartButtons.forEach(button => {
+      button.addEventListener("click", function (event) {
+        event.preventDefault();  // Prevent any default action, including scrolling
+        
+        if (this.textContent.trim() === "Add to Cart") {
+          this.classList.add("added");
+          this.textContent = " Added";
+        }
+      });
+    });
+  });
+</script>

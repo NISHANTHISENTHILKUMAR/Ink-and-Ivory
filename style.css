@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+#navbar{
+    position: sticky;
+    top:0;
+    left: 0;
+    z-index: 100;
+    padding: .5rem 5rem;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    background: black ;
+}
+.navbar .navbar-brand{
+    font-size: 30px;
+    font-style: oblique;
+    font-weight: 500;
+    color:  rgb(89, 186, 215)!important;
+}
+#navbarSupportedContent a{
+    color: white;
+    border-bottom: 2px solid transparent ;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid  rgb(89, 186, 215);
+}
+#navbarSupportedContent button{
+    background:  rgb(89, 186, 215);
+    width: 5rem;
+    border-radius: 15px;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/****Home*****/
+
+#home{
+    background: linear-gradient(rgba(210, 198, 198, 0.1),rgba(0,0,0,.5)),url(frnt.jpg);
+    background-size: cover;
+    /*background-position: center;*/
+    flex-direction: column;
+}
+#home h1{
+    font-size: 100px;
+    color: black;
+    letter-spacing: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 0px 1px 0px gray;
+    text-shadow: 0px 2px 0px gray;
+    text-shadow: 0px 3px 0px gray;
+    text-shadow: 0px 4px 0px gray;
+    text-shadow: 0px 5px 0px gray;
+    text-shadow: 0px 6px 0px gray;
+}
+#home p{
+    font-size: 18px;
+    color: rgb(68, 85, 70);
+}
+#home .input-group{
+    width: 40%;
+    height: 45px;
+}
+.signin{
+    background: rgb(89, 186, 215)!important;
+    color: white;
+    box-shadow: 2px 4px 5px rgba(0,0,0,.3);
+}
+
+
+
+/****About*****/
+
+#about{
+    background: linear-gradient(rgb(211, 195, 195),rgb(132, 192, 211) 100%);
+}
+#about h1{
+    font-weight: 500;
+    font-size: 50px;
+    color: rgb(109, 180, 218);
+    font-style: italic;
+}
+#about p{
+    color: black;
+}
+.img-container {
+  max-width: 100%;
+  height: auto;
+}
+
+.extended-logo {
+    height: 100%;
+    width: 100%;
+    max-height: 500px; /* Adjust this to control how far it extends */
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+#about .img-container {
+    padding-bottom: 50px; /* increases the downward visual space */
+}
+
+
+#product{
+    background: rgb(239, 228, 228);
+}
+#product h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+#product img{
+    width: 200px;
+    height: 200px;
+}
+.card{
+    width: 250px;
+    height: 300px;
+    background: white !important;
+    border: none !important;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.3);
+    box-shadow: inset 4px 4px 10px white;
+    border-radius: 20px !important;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 60px;
+}
+.card:hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+    box-shadow: inset -4px -4px 10px white;
+    transition: .2s;
+}
+
+
+#contact img{
+    height:100%;
+}
+.box{
+    width: 80% !important;
+    margin-top: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+#contact input{
+    margin: 15px 10px;
+}
+#contact textarea{
+    margin: 20px 10px;
+}
+
+footer{
+    width: 100%;
+    height: 30px;
+    background: rgba(0,0,0,.8);
+    margin-top: -30px;
+    text-align: center;
+    color: white;
+    padding: 3px;
+}
